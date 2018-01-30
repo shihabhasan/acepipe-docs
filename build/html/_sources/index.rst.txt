@@ -12,9 +12,6 @@ Contents:
    :maxdepth: 2
 
    description
-   qualitycontrol
-   taxonomy
-   result
    commands
 
 

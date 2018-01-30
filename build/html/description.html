@@ -36,7 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="ACEPipe Documentation 0.0.1 documentation" href="index.html"/>
-        <link rel="next" title="Quality Control" href="qualitycontrol.html"/>
+        <link rel="next" title="Commands" href="commands.html"/>
         <link rel="prev" title="Welcome to ACEPipe Documentation!" href="index.html"/> 
 
   
@@ -91,10 +91,12 @@
             
             
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitycontrol.html">Quality Control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="taxonomy.html">Taxonomy</a></li>
-<li class="toctree-l1"><a class="reference internal" href="result.html">Result</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#quality-control">Quality Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#taxonomy">Taxonomy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#result">Result</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="commands.html">Commands</a></li>
 </ul>
 
@@ -164,6 +166,28 @@
 <p>The <a class="reference external" href="http://ecogenomic.org">ACE</a> pipeline (ACEPipe) currently works with the following genes - SSU (16S/18S) rRNA and fungal ITS.
 It consists of a quality control module, amplicon clustering with <a class="reference external" href="http://qiime2.org">QIIME2</a>, and taxonomy assignment on representative
 OTU sequences using <a class="reference external" href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a>. The pipeline can run both on the forward (R1) reads and both (R1 &amp; R2) reads.</p>
+<div class="section" id="quality-control">
+<h2>Quality Control<a class="headerlink" href="#quality-control" title="Permalink to this headline">¶</a></h2>
+<p>All fastq files are processed with <a class="reference external" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastqc</a> and the reports made available.
+All fastq files are then trimmed to remove primer sequence with <a class="reference external" href="http://cutadapt.readthedocs.io/en/stable/index.html">Cutadapt</a>,
+and quality trimmed to remove poor quality sequence using a sliding window
+of 4 bases with an average base quality above 15 using the software <a class="reference external" href="http://www.usadellab.org/cms/?page=trimmomatic|Trimmomatic">Trimmomatic</a>.
+All reads are then hard trimmed to 250 bases, and any with less than 250 bases excluded.</p>
+</div>
+<div class="section" id="taxonomy">
+<h2>Taxonomy<a class="headerlink" href="#taxonomy" title="Permalink to this headline">¶</a></h2>
+<p>Fasta files are processed using <a class="reference external" href="http://qiime2.org">QIIME2</a>’s workflow with default parameters and taxonomy assignment.
+Representative features (OTU) sequences are then BLASTed against the reference database (<a class="reference external" href="http://www.arb-silva.de">Silva</a> and <a class="reference external" href="http://unite.ut.ee">UNITE</a>).
+The main analysis output is an OTU table comprising the taxonomic classification of the best database match
+and a representative sequence for each OTU.</p>
+</div>
+<div class="section" id="result">
+<h2>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
+<p>We provide the fastqc reports, OTU tables (QIIME2 BIOM file, a filtered raw count table,
+and a filtered fraction table), processing statistics file and associated bar plot, and
+a file listing software versions from the QIIME2 pipeline.</p>
+<p>Kind Regards, The ACE Team</p>
+</div>
 </div>
 
 
@@ -176,7 +200,7 @@ OTU sequences using <a class="reference external" href="http://blast.ncbi.nlm.ni
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="qualitycontrol.html" class="btn btn-neutral float-right" title="Quality Control" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="commands.html" class="btn btn-neutral float-right" title="Commands" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="index.html" class="btn btn-neutral" title="Welcome to ACEPipe Documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
