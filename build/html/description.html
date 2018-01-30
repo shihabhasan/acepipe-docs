@@ -92,6 +92,7 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Description</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#workflow">Workflow</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#quality-control">Quality Control</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#taxonomy">Taxonomy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#result">Result</a></li>
@@ -166,6 +167,10 @@
 <p>The <a class="reference external" href="http://ecogenomic.org">ACE</a> pipeline (ACEPipe) currently works with the following genes - SSU (16S/18S) rRNA and fungal ITS.
 It consists of a quality control module, amplicon clustering with <a class="reference external" href="http://qiime2.org">QIIME2</a>, and taxonomy assignment on representative
 OTU sequences using <a class="reference external" href="http://blast.ncbi.nlm.nih.gov/Blast.cgi">BLAST</a>. The pipeline can run both on the forward (R1) reads and both (R1 &amp; R2) reads.</p>
+<div class="section" id="workflow">
+<h2>Workflow<a class="headerlink" href="#workflow" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/workflow.png" src="_images/workflow.png" />
+</div>
 <div class="section" id="quality-control">
 <h2>Quality Control<a class="headerlink" href="#quality-control" title="Permalink to this headline">¶</a></h2>
 <p>All fastq files are processed with <a class="reference external" href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastqc</a> and the reports made available.
@@ -185,8 +190,8 @@ and a representative sequence for each OTU.</p>
 <h2>Result<a class="headerlink" href="#result" title="Permalink to this headline">¶</a></h2>
 <p>We provide the fastqc reports, OTU tables (QIIME2 BIOM file, a filtered raw count table,
 and a filtered fraction table), processing statistics file and associated bar plot, and
-a file listing software versions from the QIIME2 pipeline.</p>
-<p>Kind Regards, The ACE Team</p>
+taxonomy summary.</p>
+<img alt="_images/output.png" src="_images/output.png" />
 </div>
 </div>
 

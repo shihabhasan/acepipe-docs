@@ -11,6 +11,12 @@ OTU sequences using `BLAST`_. The pipeline can run both on the forward (R1) read
 .. _BLAST: http://blast.ncbi.nlm.nih.gov/Blast.cgi
 
 
+Workflow
+^^^^^^^^
+
+.. image:: workflow.png
+
+
 
 Quality Control
 ^^^^^^^^^^^^^^^
@@ -46,6 +52,6 @@ Result
 
 We provide the fastqc reports, OTU tables (QIIME2 BIOM file, a filtered raw count table,
 and a filtered fraction table), processing statistics file and associated bar plot, and
-a file listing software versions from the QIIME2 pipeline.
+taxonomy summary.
 
-Kind Regards, The ACE Team
+.. image:: output.png

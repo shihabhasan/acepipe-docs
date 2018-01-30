@@ -2,34 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29de140a-888c-4a7c-83a7-d5bea17afbf1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/qualitycontrol.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/result.rst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/source/taxonomy.rst" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/description.doctree" afterPath="$PROJECT_DIR$/build/doctrees/description.doctree" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/build/doctrees/environment.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/index.doctree" afterPath="$PROJECT_DIR$/build/doctrees/index.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/qualitycontrol.doctree" afterPath="$PROJECT_DIR$/build/doctrees/qualitycontrol.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/result.doctree" afterPath="$PROJECT_DIR$/build/doctrees/result.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/doctrees/taxonomy.doctree" afterPath="$PROJECT_DIR$/build/doctrees/taxonomy.doctree" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/objects.inv" afterPath="$PROJECT_DIR$/build/html/objects.inv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignor" afterPath="$PROJECT_DIR$/.gitignor" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/description.rst.txt" afterPath="$PROJECT_DIR$/build/html/_sources/description.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" afterPath="$PROJECT_DIR$/build/html/_sources/index.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/qualitycontrol.rst.txt" afterPath="$PROJECT_DIR$/build/html/_sources/qualitycontrol.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/result.rst.txt" afterPath="$PROJECT_DIR$/build/html/_sources/result.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/_sources/taxonomy.rst.txt" afterPath="$PROJECT_DIR$/build/html/_sources/taxonomy.rst.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/commands.html" afterPath="$PROJECT_DIR$/build/html/commands.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/description.html" afterPath="$PROJECT_DIR$/build/html/description.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/genindex.html" afterPath="$PROJECT_DIR$/build/html/genindex.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/index.html" afterPath="$PROJECT_DIR$/build/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/qualitycontrol.html" afterPath="$PROJECT_DIR$/build/html/qualitycontrol.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/result.html" afterPath="$PROJECT_DIR$/build/html/result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/search.html" afterPath="$PROJECT_DIR$/build/html/search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/searchindex.js" afterPath="$PROJECT_DIR$/build/html/searchindex.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/html/taxonomy.html" afterPath="$PROJECT_DIR$/build/html/taxonomy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/description.rst" afterPath="$PROJECT_DIR$/source/description.rst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/index.rst" afterPath="$PROJECT_DIR$/source/index.rst" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commands.rst" pinned="false" current-in-tab="true">
+      <file leaf-file-name="commands.rst" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/commands.rst">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
@@ -60,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="description.rst" pinned="false" current-in-tab="false">
+      <file leaf-file-name="description.rst" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/source/description.rst">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+            <state relative-caret-position="257">
+              <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -113,9 +93,9 @@
         <option value="$PROJECT_DIR$/source/clustering.rst" />
         <option value="$PROJECT_DIR$/source/taxonomy.rst" />
         <option value="$PROJECT_DIR$/source/result.rst" />
-        <option value="$PROJECT_DIR$/source/description.rst" />
         <option value="$PROJECT_DIR$/source/index.rst" />
         <option value="$PROJECT_DIR$/.gitignor" />
+        <option value="$PROJECT_DIR$/source/description.rst" />
       </list>
     </option>
   </component>
@@ -352,14 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/description.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignor">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -372,6 +344,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/description.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="56" column="21" lean-forward="false" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
           <folding />
         </state>
       </provider>
