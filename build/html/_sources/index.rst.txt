@@ -11,19 +11,12 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   installation
-   configuration
-   products
-   stock
-   orders
-   settings
-   contentsearch
-   localization
-   seo
-   payments
-   integrations
-   development
-   deploy
+   description
+   qualitycontrol
+   taxonomy
+   result
+   commands
+
 
 
 
