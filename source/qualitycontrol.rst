@@ -1,6 +1,6 @@
-============
+===============
 Quality Control
-============
+===============
 
 Install the package with pip::
 
