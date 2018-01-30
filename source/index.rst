@@ -4,11 +4,26 @@
    contain the root `toctree` directive.
 
 Welcome to ACEPipe Documentation!
-=================================================
+=================================
+
+Contents:
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+
+   installation
+   configuration
+   products
+   stock
+   orders
+   settings
+   contentsearch
+   localization
+   seo
+   payments
+   integrations
+   development
+   deploy
 
 
 
