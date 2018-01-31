@@ -17,7 +17,7 @@ To get the help or available tools in ACEPipe::
 
 Which will return the available commands available:
 
-.. code-block:: ruby
+.. code-block:: console
 
     Usage: acepipe [OPTIONS] COMMAND [ARGS]...
 
@@ -37,7 +37,7 @@ To get further options available in the command::
 
 Which will return all options available for the command:
 
-.. code-block:: ruby
+.. code-block:: console
 
     Usage: acepipe runpipe [OPTIONS]
 
@@ -102,3 +102,5 @@ ACEPipe wraps all the files with a html file. Transfer the ``result`` folder to 
 open the ``index.html`` file in any internet browser (Google Chrome preferred).
 
 
+.. note::
+    Enjoy ACEPipe

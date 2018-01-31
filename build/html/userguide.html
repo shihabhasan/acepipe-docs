@@ -174,16 +174,16 @@ $ acepipe --help
 </pre></div>
 </div>
 <p>Which will return the available commands available:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span></span><span class="ss">Usage</span><span class="p">:</span> <span class="n">acepipe</span> <span class="o">[</span><span class="no">OPTIONS</span><span class="o">]</span> <span class="no">COMMAND</span> <span class="o">[</span><span class="no">ARGS</span><span class="o">]...</span>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">Usage: acepipe [OPTIONS] COMMAND [ARGS]...</span>
 
-<span class="ss">Options</span><span class="p">:</span>
-  <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>  <span class="no">Show</span> <span class="n">this</span> <span class="n">message</span> <span class="ow">and</span> <span class="nb">exit</span><span class="o">.</span>
+<span class="go">Options:</span>
+<span class="go">  -h, --help  Show this message and exit.</span>
 
-<span class="ss">Commands</span><span class="p">:</span>
-  <span class="n">makedb</span>
-  <span class="n">runpipe</span>
-  <span class="n">runqc</span>
-  <span class="n">runsingle</span>
+<span class="go">Commands:</span>
+<span class="go">  makedb</span>
+<span class="go">  runpipe</span>
+<span class="go">  runqc</span>
+<span class="go">  runsingle</span>
 </pre></div>
 </div>
 <p>To get further options available in the command:</p>
@@ -192,31 +192,31 @@ $ acepipe runpipe --help
 </pre></div>
 </div>
 <p>Which will return all options available for the command:</p>
-<div class="highlight-ruby"><div class="highlight"><pre><span></span><span class="ss">Usage</span><span class="p">:</span> <span class="n">acepipe</span> <span class="n">runpipe</span> <span class="o">[</span><span class="no">OPTIONS</span><span class="o">]</span>
+<div class="highlight-console"><div class="highlight"><pre><span></span><span class="go">Usage: acepipe runpipe [OPTIONS]</span>
 
-<span class="ss">Options</span><span class="p">:</span>
-  <span class="o">-</span><span class="n">h</span><span class="p">,</span> <span class="o">--</span><span class="n">help</span>                      <span class="no">Show</span> <span class="n">this</span> <span class="n">message</span> <span class="ow">and</span> <span class="nb">exit</span><span class="o">.</span>
-  <span class="o">-</span><span class="n">s</span><span class="p">,</span> <span class="o">--</span><span class="n">sheetfile</span> <span class="no">TEXT</span>            <span class="n">provide</span> <span class="n">sheetfile</span> <span class="n">location</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="n">samplesheet</span><span class="o">.</span><span class="n">tab</span>
-  <span class="o">-</span><span class="n">o</span><span class="p">,</span> <span class="o">--</span><span class="n">outdir</span> <span class="no">TEXT</span>               <span class="n">provide</span> <span class="n">output</span> <span class="n">folder</span> <span class="n">location</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="n">acepipe_results</span>
-  <span class="o">-</span><span class="n">e</span><span class="p">,</span> <span class="o">--</span><span class="n">email</span> <span class="no">TEXT</span>                <span class="n">provide</span> <span class="n">email</span> <span class="nb">id</span>
-  <span class="o">-</span><span class="n">dt</span><span class="p">,</span> <span class="o">--</span><span class="n">taxonomydb</span> <span class="no">TEXT</span>          <span class="n">provide</span> <span class="n">reference</span> <span class="n">taxonomy</span> <span class="n">database</span> <span class="n">location</span>
-                                  <span class="ss">example</span><span class="p">:</span>
-                                  <span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">qiime_db</span><span class="o">/</span><span class="n">silva_taxonomy_db</span><span class="o">.</span><span class="n">qza</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="n">silvadb</span> <span class="o">&amp;</span> <span class="n">unitedb</span>
-  <span class="o">-</span><span class="n">dg</span><span class="p">,</span> <span class="o">--</span><span class="n">genomedb</span> <span class="no">TEXT</span>            <span class="n">provide</span> <span class="n">reference</span> <span class="n">sequence</span> <span class="n">database</span> <span class="n">location</span>
-                                  <span class="ss">example</span><span class="p">:</span> <span class="sr">/usr/</span><span class="n">local</span><span class="o">/</span><span class="n">qiime_db</span><span class="o">/</span><span class="n">silva_seq_db</span><span class="o">.</span><span class="n">qz</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="n">silvadb</span> <span class="o">&amp;</span> <span class="n">unitedb</span>
-  <span class="o">-</span><span class="n">qm</span><span class="p">,</span> <span class="o">--</span><span class="n">qiimemode</span> <span class="o">[</span><span class="n">forward</span><span class="o">|</span><span class="n">both</span><span class="o">]</span>
-                                  <span class="n">provide</span> <span class="n">qiime</span> <span class="n">reads</span> <span class="n">mode</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="n">forward</span>
-  <span class="o">-</span><span class="n">l</span><span class="p">,</span> <span class="o">--</span><span class="n">readlength</span> <span class="no">INTEGER</span>        <span class="n">provide</span> <span class="n">reads</span> <span class="n">length</span> <span class="n">to</span> <span class="n">keep</span> <span class="n">after</span> <span class="n">trimming</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="mi">250</span>
-  <span class="o">-</span><span class="n">q</span><span class="p">,</span> <span class="o">--</span><span class="n">quality</span> <span class="no">INTEGER</span>           <span class="n">provide</span> <span class="n">quality</span> <span class="n">score</span> <span class="n">threshold</span> <span class="n">value</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="mi">15</span>
-  <span class="o">-</span><span class="n">j</span><span class="p">,</span> <span class="o">--</span><span class="n">joblist</span> <span class="no">TEXT</span>              <span class="n">provide</span> <span class="n">job</span> <span class="nb">id</span> <span class="n">as</span> <span class="n">a</span> <span class="n">comma</span><span class="o">-</span><span class="n">separated</span> <span class="n">list</span>
-                                  <span class="n">default</span><span class="o">=</span><span class="n">all</span>
+<span class="go">Options:</span>
+<span class="go">  -h, --help                      Show this message and exit.</span>
+<span class="go">  -s, --sheetfile TEXT            provide sheetfile location</span>
+<span class="go">                                  default=samplesheet.tab</span>
+<span class="go">  -o, --outdir TEXT               provide output folder location</span>
+<span class="go">                                  default=acepipe_results</span>
+<span class="go">  -e, --email TEXT                provide email id</span>
+<span class="go">  -dt, --taxonomydb TEXT          provide reference taxonomy database location</span>
+<span class="go">                                  example:</span>
+<span class="go">                                  /usr/local/qiime_db/silva_taxonomy_db.qza</span>
+<span class="go">                                  default=silvadb &amp; unitedb</span>
+<span class="go">  -dg, --genomedb TEXT            provide reference sequence database location</span>
+<span class="go">                                  example: /usr/local/qiime_db/silva_seq_db.qz</span>
+<span class="go">                                  default=silvadb &amp; unitedb</span>
+<span class="go">  -qm, --qiimemode [forward|both]</span>
+<span class="go">                                  provide qiime reads mode</span>
+<span class="go">                                  default=forward</span>
+<span class="go">  -l, --readlength INTEGER        provide reads length to keep after trimming</span>
+<span class="go">                                  default=250</span>
+<span class="go">  -q, --quality INTEGER           provide quality score threshold value</span>
+<span class="go">                                  default=15</span>
+<span class="go">  -j, --joblist TEXT              provide job id as a comma-separated list</span>
+<span class="go">                                  default=all</span>
 </pre></div>
 </div>
 </div>
@@ -254,6 +254,10 @@ Example: <code class="docutils literal"><span class="pre">SB2658_J1235_S352_L001
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
 <p>ACEPipe wraps all the files with a html file. Transfer the <code class="docutils literal"><span class="pre">result</span></code> folder to your local computer and
 open the <code class="docutils literal"><span class="pre">index.html</span></code> file in any internet browser (Google Chrome preferred).</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Enjoy ACEPipe</p>
+</div>
 </div>
 </div>
 
