@@ -95,6 +95,15 @@
 <li class="toctree-l2"><a class="reference internal" href="#quick-start">Quick start</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#input">Input</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples">Examples</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-1-forward-reads-processing-in-qiime2">Example-1: Forward reads processing in QIIME2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-2-both-reads-processing-in-qiime2">Example-2: Both reads processing in QIIME2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-3-customized-database">Example-3: Customized database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-4-customized-quality-control">Example-4: Customized quality control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-5-single-or-multiple-jobs-processing">Example-5: Single or multiple jobs processing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-6-single-file">Example-6: Single file</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -254,9 +263,69 @@ Example: <code class="docutils literal"><span class="pre">SB2658_J1235_S352_L001
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
 <p>ACEPipe wraps all the files with a html file. Transfer the <code class="docutils literal"><span class="pre">result</span></code> folder to your local computer and
 open the <code class="docutils literal"><span class="pre">index.html</span></code> file in any internet browser (Google Chrome preferred).</p>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>To activate ACEPipe:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ source activate acepipe
+</pre></div>
+</div>
+<div class="section" id="example-1-forward-reads-processing-in-qiime2">
+<h3>Example-1: Forward reads processing in QIIME2<a class="headerlink" href="#example-1-forward-reads-processing-in-qiime2" title="Permalink to this headline">¶</a></h3>
+<p>To process only the forwards reads in  QIIME2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runpipe -s samplesheet.tab -o output_folder -e id@eaxmple.com &gt; acepipe_forward_output.log &amp;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-2-both-reads-processing-in-qiime2">
+<h3>Example-2: Both reads processing in QIIME2<a class="headerlink" href="#example-2-both-reads-processing-in-qiime2" title="Permalink to this headline">¶</a></h3>
+<p>To process both reads in  QIIME2:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runpipe -s samplesheet.tab -o output_folder -qm both -e id@eaxmple.com &gt; acepipe_both_output.log &amp;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-3-customized-database">
+<h3>Example-3: Customized database<a class="headerlink" href="#example-3-customized-database" title="Permalink to this headline">¶</a></h3>
+<p>To create customized database:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ acepipe makedb -dg location/to/reference/sequences/file -dt location/to/taxonomy/file -o output/to/custom/database
+</pre></div>
+</div>
+<p>To use the customized database:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runpipe -s samplesheet.tab -dg location/to/reference/sequences/file -dt location/to/taxonomy/file
+-o output_folder &gt; acepipe_forward_customDB_output.log &amp;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-4-customized-quality-control">
+<h3>Example-4: Customized quality control<a class="headerlink" href="#example-4-customized-quality-control" title="Permalink to this headline">¶</a></h3>
+<p>To process with q value of 25 and reads length of 220:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runpipe -s samplesheet.tab -o output_folder -q 25 -l 220 -e id@eaxmple.com &gt; acepipe_forward_customQC_output.log &amp;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-5-single-or-multiple-jobs-processing">
+<h3>Example-5: Single or multiple jobs processing<a class="headerlink" href="#example-5-single-or-multiple-jobs-processing" title="Permalink to this headline">¶</a></h3>
+<p>ACEPipe processes all jobs by default. However, a single job or multipe jobs can be processed.
+To process a single job:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runpipe -s samplesheet.tab -o output_folder -J JOBID -e id@eaxmple.com &gt; acepipe_forward_JOBID_output.log &amp;
+</pre></div>
+</div>
+<p>To process multiple jobs:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runpipe -s samplesheet.tab -o output_folder -J JOBID1,JOBID2,JOBID3,JOBIDX -e id@eaxmple.com &gt; acepipe_forward_JOBS_output.log &amp;
+</pre></div>
+</div>
+</div>
+<div class="section" id="example-6-single-file">
+<h3>Example-6: Single file<a class="headerlink" href="#example-6-single-file" title="Permalink to this headline">¶</a></h3>
+<p>To use only single reads:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>$ nohup acepipe runsingle -s samplesheet.tab -o output_folder -rd forward &gt; acepipe_single_forward_output.log &amp;
+</pre></div>
+</div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Enjoy ACEPipe</p>
+<p class="last">Please provide your valuable comments and suggestions to make ACEPipe better.
+If you need further help, please contact Shihab Hasan (<a class="reference external" href="mailto:shihab&#46;hasan&#37;&#52;&#48;uqconnect&#46;edu&#46;au">shihab<span>&#46;</span>hasan<span>&#64;</span>uqconnect<span>&#46;</span>edu<span>&#46;</span>au</a>).</p>
+</div>
 </div>
 </div>
 </div>
