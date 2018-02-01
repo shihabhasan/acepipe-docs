@@ -154,8 +154,8 @@ To process multiple jobs::
 
     $ nohup acepipe runpipe -s samplesheet.tab -o output_folder -J JOBID1,JOBID2,JOBID3,JOBIDX -e id@eaxmple.com > acepipe_forward_JOBS_output.log &
 
-Example-6: Single file
-~~~~~~~~~~~~~~~~~~~~~~
+Example-6: Single reads
+~~~~~~~~~~~~~~~~~~~~~~~
 
 To use only single reads::
 
