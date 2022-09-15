@@ -164,4 +164,4 @@ To use only single reads::
 
 .. note::
     Please provide your valuable comments and suggestions to make ACEPipe better.
-    If you need further help, please contact Shihab Hasan (shihab.hasan@uqconnect.edu.au).
+    If you need further help, please contact Shihab Hasan (shihab.hasan@uq.net.au).
